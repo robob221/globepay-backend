@@ -1,8 +1,8 @@
-"""all_tables
+"""third_update
 
-Revision ID: b11a4b1f4b3e
+Revision ID: 41f0c583240b
 Revises: 
-Create Date: 2026-09-17 00:46:58.111494
+Create Date: 2026-09-17 10:37:25.536151
 
 """
 from typing import Sequence, Union
@@ -16,7 +16,7 @@ import sqlmodel  # SQLModel column types (e.g. sqlmodel.sql.sqltypes.AutoString)
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'b11a4b1f4b3e'
+revision: str = '41f0c583240b'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
