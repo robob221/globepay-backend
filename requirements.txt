@@ -1,13 +1,14 @@
-fastapi==0.115.7
-uvicorn[standard]==0.34.0
+fastapi==0.110.1
+uvicorn[standard]==0.27.0
 
 sqlmodel==0.0.22
 SQLAlchemy==2.0.37
 asyncpg==0.30.0
 alembic==1.14.1
 
-pydantic
-pydantic-settings
+pydantic==2.12.5
+pydantic-settings==2.13.1
+pydantic-core==2.41.5
 
 python-dotenv==1.0.1
 passlib[bcrypt]==1.7.4
