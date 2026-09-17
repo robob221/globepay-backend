@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
     yield
     scheduler.shutdown()
 
-app = FastAPI(title="GlobePay API", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="GlobePay API", version="0.1.0", lifespan=lifespan,docs_url="/v1/docs",)
 
 app.add_middleware(
     CORSMiddleware,
