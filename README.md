@@ -22,6 +22,10 @@ GlobePay/
 
 ## Backend setup
 
+The backend is pinned to Python 3.11 in `runtime.txt`. Use Python 3.11 for
+local and hosted deployments; the current dependency pins do not support
+building reliably on Python 3.14.
+
 From the repository root:
 
 ```bash
