@@ -6,8 +6,8 @@ SQLAlchemy==2.0.37
 asyncpg==0.30.0
 alembic==1.14.1
 
-pydantic==2.10.6
-pydantic-settings==2.7.1
+pydantic
+pydantic-settings
 
 python-dotenv==1.0.1
 passlib[bcrypt]==1.7.4
