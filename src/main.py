@@ -20,7 +20,13 @@ async def lifespan(app: FastAPI):
     yield
     scheduler.shutdown()
 
-app = FastAPI(title="GlobePay API", version="0.1.0", lifespan=lifespan,docs_url="/v1/docs",)
+app = FastAPI(
+    title="GlobePay API",
+    version="0.1.0",
+    lifespan=lifespan,
+    docs_url="/v1/docs",
+    openapi_url="/v1/openapi.json",  # Explicitly align openapi JSON path with /v1
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -38,6 +44,11 @@ app.include_router(crossborder_router)
 app.include_router(cards_router)
 app.include_router(payments_router)
 app.include_router(admin_router)
+
+
+@app.get("/")
+async def root():
+    return {"status": "ok", "message": "GlobePay API is running"}
 
 
 @app.get("/health")
